@@ -61,12 +61,13 @@ export default function Home() {
     { id: "birthday", icon: <Cake size={18} />, label: "Birthday Hall" },
     { id: "conference", icon: "/crlogo.png", label: "Conference Room" },
     { id: "cafe", icon: <Coffee size={18} />, label: "Just Coffee" },
+    
   ];
 
   const spaces = [
     {
       id: "workspace",
-      image: "/workspace.jpeg",
+      image: "/f.webp",
       title: "Workspace",
       subtitle: "6 private pods available",
       desc: "Get in the zone. We've set up quiet, comfy pods with fast Wi-Fi and plenty of plugs so you can actually get things done. Oh, and your first coffee is on us.",
@@ -76,7 +77,7 @@ export default function Home() {
     },
     {
       id: "birthday",
-      image: "/birthday.jpg",
+      image: "/c.jpeg",
       title: "Birthday Hall",
       subtitle: "2 exclusive event halls",
       desc: "Throw a party they'll actually remember. We'll handle the decorations, the cake, and the cleanup, so you can just show up and celebrate with your favourite people.",
@@ -86,7 +87,7 @@ export default function Home() {
     },
     {
       id: "conference",
-      image: "/meeting.jpg",
+      image: "/d.webp",
       title: "Conference Room",
       subtitle: "2 professional meeting rooms",
       desc: "Ditch the boring boardroom. We've got all the tech you need (projectors, whiteboards, fast Wi-Fi) plus the good coffee and catered breaks your team actually wants.",
@@ -94,10 +95,12 @@ export default function Home() {
       price: "₹799", unit: "/hr", rating: 4.7, reviews: 94, featured: false,
       perks: ["Available 8 AM – 8 PM", "Min 1 hr booking", "Coffee breaks included"],
     },
+    
+    
 
   ];
 
-  const menuCategories = ["Bites", "Toasties", "Pizzas", "Pasta", "Maggie", "Health", "Drinks", "Ice"];
+  const menuCategories = ["Bites", "Toasties", "Pizzas", "Pasta", "Maggie", "Health", "Drinks", "Ice", "Pizzas"];
   const menuItems = {
     Bites: [
       { name: "Chip an Dip", desc: "Potato chips served with tzatziki", price: 150 },
@@ -152,6 +155,7 @@ export default function Home() {
       { name: "Mango Lassi", desc: "Thick Alphonso mango blended with yogurt", price: 140 },
       { name: "Strawberry Smoothie", desc: "Fresh strawberries, banana and milk", price: 160 },
       { name: "Virgin Mojito", desc: "Lime, mint, sugar and sparkling water", price: 130 },
+      { name: "Chocolate Shake", desc: "Lime, mint, sugar and sparkling water", price: 150 },
     ],
     Ice: [
       { name: "Filter vanila", desc: "South Indian drip coffee, hot & strong", price: 80 },
@@ -163,7 +167,12 @@ export default function Home() {
       { name: "Strawberry Smoothie", desc: "Fresh strawberries, banana and milk", price: 160 },
       { name: "Virgin Mojito", desc: "Lime, mint, sugar and sparkling water", price: 130 },
     ],
-
+    Pizzas: [
+      { name: "classic", desc: "Classic margherita pizza", price: 80 },
+      { name: "Cheese", desc: "Mozzarella cheese pizza", price: 160 },
+      
+    ],
+    
 
   };
 
@@ -300,9 +309,9 @@ export default function Home() {
       {/* ── MARQUEE ── */}
       <div className="marquee-strip">
         <div className="marquee-track">
-          {["6 Work Pods", "2 Birthday Halls", "2 Conference Rooms", "300 Mbps WiFi",
+          {["6 Work Pods", "2 Birthday Halls", "2 Conference Rooms", "Secure Payments",
             "100% Vegetarian", "Artisan Coffee", "Instant Booking", "Pre-order Food",
-            "6 Work Pods", "2 Birthday Halls", "2 Conference Rooms", "300 Mbps WiFi",
+            "6 Work Pods", "2 Birthday Halls", "2 Conference Rooms", "Secure Payments",
             "100% Vegetarian", "Artisan Coffee", "Instant Booking", "Pre-order Food",
           ].map((item, i) => (
             <span key={i}>{item} <span className="dot">•</span></span>
@@ -355,7 +364,7 @@ export default function Home() {
         </div>
 
         <div className="stats-row" data-aos="fade-up">
-          {[["6", "Work Pods"], ["2", "Birthday Halls"], ["2", "Conference Rooms"], ["18+", "Coffee Blends"], ["2,400+", "Happy Guests"], ["4.8★", "Avg Rating"]].map(([n, l]) => (
+          {[["6", "Work Pods"], ["2", "Birthday Halls"], ["2", "Conference Rooms"], ["18+", "Coffee Blends"], ["2,400+", "Happy Guests"], ["4.8★", "Avg Rating"],["40% OFF", "Special Offer"]].map(([n, l]) => (
             <div className="stat-cell" key={l}>
               <div className="stat-num">{n}</div>
               <div className="stat-label">{l}</div>

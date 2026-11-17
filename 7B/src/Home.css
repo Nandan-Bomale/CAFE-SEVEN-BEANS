@@ -45,13 +45,13 @@ nav {
 nav button {
   background: none;
   border: none;
-  color: #d7c2a8;
+  color: #2fa227;
   cursor: pointer;
   font-size: 0.9rem;
 }
 
 nav button:hover {
-  color: #fff5e6;
+  color: #2bdd18;
 }
 
 .auth {
@@ -157,6 +157,13 @@ nav button:hover {
   display: flex;
   gap: 20px;
 }
+button {
+  background: none;
+  border: none;
+  color: #2fa227;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
 
 /* CTA */
 .cta {
@@ -176,6 +183,6 @@ nav button:hover {
 footer {
   text-align: center;
   padding: 20px;
-  background: #2b1a10;
-  color: #d7c2a8;
+  background: #42b71b;
+  color: #20268f;
 }
